@@ -1,0 +1,223 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+span {
+    font-family: 'Markazi Text', serif;
+}
+
+p {
+    font-family: 'Jost', serif;
+    font-weight: 300;
+}
+
+.health-insurance-keys li {
+    font-family: 'Jost', serif;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.custom-delay-100 {
+    animation-delay: 0.1s; /* Adjust to your preferred delay time */
+}
+
+.custom-delay-200 {
+    animation-delay: 0.2s; /* Adjust to your preferred delay time */
+}
+
+.custom-delay-300 {
+    animation-delay: 0.3s; /* Adjust to your preferred delay time */
+}
+
+.custom-delay-400 {
+    animation-delay: 0.4s; /* Adjust to your preferred delay time */
+}
+
+.custom-delay-500 {
+    animation-delay: 0.5s; /* Adjust to your preferred delay time */
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #17a2b8;
+}
+
+footer p,
+footer h5 {
+    margin-bottom: 10px;
+}
+
+.sm-break {
+    height: 2px;
+    background-color: #f1f1f1;
+    margin: 15px auto;
+    width: 100px;
+}
+
+.key-header, .key-content {
+    font-family: 'Jost', serif;
+}
+
+.key-content {
+    font-size: 1.15rem;
+    line-height: 2rem;
+    font-weight: 300;
+}
+
+.key-header {
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.insurance-content {
+    background-image: url('../images/life_insurance_background.jpg');
+}
+
+.insurance-content .card {
+    justify-content: space-between;
+    height: 100%;
+    text-align: center;
+    border-radius: 1.25rem;
+}
+
+#life-ins .h1, #demat-ins .h1 {
+    color: white;
+    text-shadow: 2px 2px 3px black;
+}
+
+.demat-content {
+    background-image: url('../images/demat_account_background.jpg');
+}
+
+.home-banner {
+    background-color: #cedff9;
+}
+
+#home-tagline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #1e367c;
+    font-size: 1.15rem;
+}
+
+#home-tagline span {
+    font-family: "Young Serif", serif;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px #5a73c4;
+    font-size: 2rem;
+}
+
+.navbar-nav .nav-link, .navbar-nav .dropdown-item {
+    font-family: 'Jost', serif;
+    font-weight: 500;
+}
+
+.navbar-nav .dropdown-item {
+    color: rgba(0, 0, 0, .5);
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: rgba(0, 0, 0, .7);
+}
+
+.navbar, .navbar-brand img {
+    transition: 0.4s;
+}
+
+.iphone_pro {
+    width: 60%;
+}
+
+.iphone_white, .iphone_black {
+    width: 60%
+}
+
+div:has(> img[class*="iphone"]) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#goToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99; /* Ensure it appears above other elements */
+    background-color: #818385;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    /* padding: 5px 15px; */
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.4s, transform 0.4s;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#goToTopBtn:hover {
+    background-color: #7a7a7a;
+    transform: scale(1.1);
+}
+
+.fade-in {
+    opacity: 1 !important;
+}
+
+.fade-out {
+    opacity: 0 !important;
+}
+
+@media screen and (max-width: 600px) {
+    #home-tagline span, #home-tagline p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sm-break {
+        margin: 5px auto;
+    }
+
+    .iphone_pro {
+        width: 40%;
+    }
+
+    .iphone_white, .iphone_black {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+    .sm-break {
+        margin: 5px auto;
+    }
+
+    .iphone_pro {
+        width: 70%;
+    }
+
+    .iphone_white, .iphone_black {
+        width: 70%;
+    }
+}
