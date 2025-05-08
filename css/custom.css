@@ -10,6 +10,10 @@ span {
     font-family: 'Markazi Text', serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Markazi Text', serif;
+}
+
 p {
     font-family: 'Jost', serif;
     font-weight: 300;
@@ -186,6 +190,74 @@ div:has(> img[class*="iphone"]) {
 
 .fade-out {
     opacity: 0 !important;
+}
+
+.carousel-banner .carousel-control-prev, .carousel-banner .carousel-control-next {
+    opacity: 1 !important;
+}
+
+.carousel-banner .carousel-control-prev-icon,
+.carousel-banner .carousel-control-next-icon {
+    background-color: white;
+    background-image: none !important; /* REMOVE default Bootstrap arrow SVG */
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    /* border: 1px solid #333; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.carousel-banner .carousel-control-prev-icon::before,
+.carousel-banner .carousel-control-next-icon::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    transform: rotate(225deg);
+}
+
+.carousel-banner .carousel-control-next-icon::before {
+    transform: rotate(45deg);
+}
+
+.carousel-banner .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M5.5 0L4.086 1.414 6.672 4l-2.586 2.586L5.5 8 9.5 4z' transform='rotate(180 4 4)'/%3E%3C/svg%3E");
+}
+
+.carousel-banner .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='black' d='M0 4l4-4v8z'/%3E%3C/svg%3E");
+}
+
+.carousel-banner .carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-banner .carousel-control-next:hover .carousel-control-next-icon {
+    background-color: #477f51; /* Box color on hover */
+}
+
+.carousel-banner .carousel-control-prev:hover .carousel-control-prev-icon::before,
+.carousel-banner .carousel-control-next:hover .carousel-control-next-icon::before {
+    border-top: 4px solid white;
+    border-right: 4px solid white;
+}
+
+.carousel-banner .carousel-caption {
+    right: auto;
+    bottom: 40% !important;
+}
+
+.carousel-banner .carousel-caption h1 {
+    color: #619849;
+    font-size: 5rem;
+}
+
+.carousel-banner .carousel-caption p {
+    color: #619849;
+    font-size: 2rem;
 }
 
 @media screen and (max-width: 600px) {
