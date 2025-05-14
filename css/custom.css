@@ -260,6 +260,20 @@ div:has(> img[class*="iphone"]) {
     font-size: 2rem;
 }
 
+.gallery {
+    column-count: 4;
+    column-gap: 10px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: block;
+}
+
 @media screen and (max-width: 600px) {
     #home-tagline span, #home-tagline p {
         font-size: 14px;
