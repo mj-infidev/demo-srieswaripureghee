@@ -290,6 +290,32 @@ div:has(> img[class*="elite-image"]) {
     display: block;
 }
 
+.collapse.navbar-collapse {
+    flex-direction: column;
+}
+
+.collapse.navbar-collapse.show .navbar-nav {
+    gap: unset; /* Reset gap when toggle icon show */
+}
+
+.collapse.navbar-collapse .navbar-nav {
+    gap: 4rem;
+}
+
+.navbar-brand {
+    transition: width 0.3s ease;
+    width: 25%;
+}
+
+.navbar.scrolled .navbar-brand {
+    width: 25% !important;
+}
+
+.navbar-brand img {
+    width: 100%;
+}
+
+
 @media screen and (max-width: 600px) {
     #home-tagline span, #home-tagline p {
         font-size: 14px;
@@ -331,6 +357,13 @@ div:has(> img[class*="elite-image"]) {
         width: 70%;
     }
 }
+
+@media screen and (min-width: 992px) {
+    .navbar-brand img {
+        width: 40%;
+    }
+}
+
 .card-hover {
     transition: transform 0.2s, box-shadow 0.2s;
     display: flex;
