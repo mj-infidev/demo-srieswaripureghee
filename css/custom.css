@@ -511,3 +511,11 @@ div:has(> img[class*="elite-image"]) {
     font-size: 1.25rem;
     line-height: 2.5rem;
 }
+
+.owl-stage-outer {
+    padding: 20px 0px;
+}
+
+.owl-carousel .card-shadow {
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .075) !important;
+}
